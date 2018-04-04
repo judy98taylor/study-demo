@@ -1,0 +1,106 @@
+body{ background-color: #F15353;}
+.heading { background-color: rgba(255, 255, 255, 0.5);}
+    .p { height:30px; line-height: 30px; display: inline-block; text-indent:1em;color: #fff;}
+    .close { float: right; margin-right: 10px; margin-top: 5px;}
+        .close i { color: white;}
+    .logo { text-align: center; margin: 5px auto; }
+        .logo img { height: 100px; width: 100px; border: solid white 2px; border-radius: 50%; box-shadow: 0 2px 2px #3a3a3a;display: inline-block;}
+    .logoText { color: #fff; text-align: center;margin: 10px auto;}
+.show { }
+    .sublight { height: 10px; background: url(../images/sawtooth.fw.png) repeat-x; background-size:20px 20px; }
+.show {}
+    .showmain { background-color: #fff;padding: 10px;}
+    /*.showtop { border-bottom: 1px solid; position: relative; 
+        
+        
+        background-color: aqua;
+        height:99px;}
+
+
+
+        .avatar { height: 60px; width: 60px; border-radius: 50%; background-color: #fff; padding: 2px; box-shadow: 0 2px 2px #3a3a3a; margin: auto 20px; position: absolute;top:18px; left: -12px;}
+            .avatar img { width: 100%; height: 100%; border-radius: 50%;}
+        .showtext { position: absolute; left: 88px; height: 100px; line-height: 100px;}
+            .nickname { font-weight: bold;}
+            .tip { display: inline-block; position: absolute; top: 40px; right: 10px; color: gray; line-height: 100px;}*/
+    /*.showpic {display: inline-block; padding: 10px; text-align: center; margin: 0 auto; width: 310px;}
+        .a,.b,.c,.d { margin: 2px; display:inline-block;}
+        .a { display: inline-block;}
+        .showpic img { width: 70px; height: 70px; border-radius: 10px; }*/
+.showpic { }
+    .showpic ul { text-align: center; list-style: none;}
+        .showpic li { list-style: none; display: inline-block;}
+            .a,.b,.c,.d { margin: 2px; display:inline-block;}
+            .a { display: inline-block;}
+            .showpic img {   padding: 0;
+  width: 67px;
+  height: 67px;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: inline-block; }
+   
+
+    .suplight { height: 10px; background: url(../images/sawtooth.fw.png) repeat-x center -10px; background-size:20px 20px;}
+.activity {}
+    .title { text-align: center;margin: 50px auto;}
+        .title img { width: 260px; height: 80px;}
+    .picWrapper { }
+        .pic { position: relative; height: 300px; width: 300px; margin: 0 auto; text-align: center;}
+            .brown { height: 300px; width: 300px; display: inline-block;}
+            .yellow { height: 80px; width: 160px;position: absolute; display: inline-block; bottom: 20px; right: 70px;}
+            .pic p { position: absolute; display: inline-block; bottom: 36px; right: 100px;color: brown; font-size: 24px;}
+            .pic em { color: brown; position: absolute; display: inline-block; bottom: -10px; right: 28px;font-size: 50px;}
+            .pic div { /*background-color: rgba(255, 255, 255, 0.3); width: 100px; height: 100px; padding: 2px; position: absolute; border-radius: 50%;*/
+  background-color: rgba(0,0,0, 0.2);
+  width: 60px;
+  height: 60px;
+  padding: 1px;
+  position: absolute;
+  border-radius: 50%;
+  right: 44px;
+  top: 170px;
+            }
+            .pic a {/* background-color: brown; width: 100px; height: 100px; border: 1px solid rgba(195, 156, 28, 0.37); position: absolute; bottom: 76px; right: 64px; border-radius: 50%;
+            width: 36px; line-height: 18px;
+            color: #fff; display: block;*/
+  background-color: brown;
+  height: 45px;
+  position: absolute;
+  border-radius: 50%;
+  width: 45px;
+  color: #fff;
+  display: block;
+  top: 3px;
+  right: 4px;
+  padding: 5px;
+}
+            
+            .pic h4 { color: #fff; }
+.info { text-align: center;margin: 20px auto;}
+    .info span { color: yellow;}
+.btn { text-align: center;}
+.k1,.k2 { background: rgba(0, 0, 0, 0.25); padding: 5px; margin: 2px auto; display: inline-block; border-radius: 15px;}
+    .gray { color: gray; background-color: aliceblue; border-radius: 10px; font-size: 40px; padding: 10px 20px; margin: 0px auto; font-weight: bold; 
+       
+    display: block; width: 200px; box-shadow: 0 -4px 2px gray inset; }
+    .here { color: brown; background-color: yellow; border-radius: 10px; font-size: 40px; padding: 10px 20px; margin: 0px auto; font-weight: bold;
+        
+    display: block; width: 200px; box-shadow: 0 -4px 2px gray inset; 
+      
+    }
+.tips { text-align: center; margin: 30px auto;}
+    .tip a { color: #fff;}
+
+.list { background-color: rgba(0, 0, 0, 0.25); padding: 20px 0;}
+    .listTitle { text-align: center;margin: 50px auto;}
+        .listTitle img { width: 320px; height: 80px;}
+    .listText { padding: 10px 30px; margin: 0 auto;}
+        .listText ul {}
+        .listText li { list-style-type: none; border-bottom: 1px dashed gray; padding: 5px 5px 4px 5px; text-align: center;vertical-align: middle; position: relative; height: 56px;}
+        .listText a { width: 50px; height: 50px;  border-radius: 10px; position: absolute; left: 5px;top: 5px;}
+            .listText img { width: 100%; height: 100%; border-radius: 10px; border: 2px solid #fff;}
+        .listText div { position: absolute; left: 70px;top: 24px; display: inline-block; text-align: center;}
+            .listText span { color: yellow;}
+    
+.subdark { height: 10px; background: url(../images/sawtooth-black.fw.png) repeat-x; background-size:20px 20px; } 
+.supdark { height: 20px; background: url(../images/sawtooth-black.fw.png) repeat-x center -10px; background-size:20px 20px;}

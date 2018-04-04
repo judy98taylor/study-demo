@@ -1,0 +1,9 @@
+/* 三列中间自适应布局 */
+.g-box { margin: 0; background-color: aqua; color: white; text-align: center; height: 30px;padding: 10px 0;}
+    .g-left { background-color: red; position:relative; float:left; width:50px; height: 30px;}
+        .g-left p { line-height: 30px; font-size: 14px; text-align: center;}
+    .g-right { background-color: blue; position:relative; height: 30px; margin-left: 50px;}
+        .gr-left { }
+            .gr-left p { text-align: center;line-height: 30px;margin-right: 50px;font-size: 6px;}
+        .gr-right { background-color: olive; position: absolute;line-height: 30px; height: 30px; top:0px; right: 0px;  width: 50px;}
+        .gr-right p { text-align: center;line-height: 30px;font-size: 14px;}

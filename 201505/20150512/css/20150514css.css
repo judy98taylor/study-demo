@@ -1,0 +1,37 @@
+body { background-color: red;}
+
+    .header {}
+        .top {position: relative;background-color: rgba(255, 255, 255, 0.5);}
+            .info {color: #fff;line-height: 30px;padding-left: 12px;}
+            .close {position: absolute;top: 7px;right: 5px;}
+                .close a {color: black;line-height: 18px;}
+                .close a p {height: 30px;display: block;margin-right: 3px;font-weight: bold;background-color: #fff;border-radius: 50%;width: 16px;height: 16px;}
+        
+    .wapper {}
+        .logoWapper {text-align: center}
+            .logoWapper img {border: 4px solid #fff;border-radius: 50%;height: 100px;box-shadow:0px 2px 1px rgba(0, 0, 0, 0.5);margin: 20px 0 10px 0;}
+                .name {color: #fff;font-weight: bold;font-size: 20px;}
+                .add {color: #fff;font-size: 10px;margin: 10px auto;}
+                .tel {color: #fff;font-size: 10px;margin: 10px auto;}
+        .usershowWapper {background-color: #fff;width: 100%;height: 40%;}
+            .subjaggerLight {height: 6px;background: repeat-x center 0;background-size: 12px 12px;}
+            .usershow {margin: 10px 20px;height: 200px;text-align:center;}
+                .avatar {vertical-align:middle;left: 20px;}
+                    .avatar img {display: inline-block;border: 2px solid rgba(255, 0, 0, 0.5);border-radius: 50%;width: 100px;
+                        height: 100px;box-shadow: 0px 2px rgba(0, 0, 0, 0.5);margin: 20px;}
+                .text {display: inline-block;position: relative;}
+                    .nickname {display: table-cell;vertical-align: middle;height: 100px;}
+                    .tips {color: grey;}
+                .show {}
+                    .show ul {list-style: none;}
+                        .a img{width: 100px;height:100px;border-radius: 5px;margin: 10px;display: inline-block;}
+                        .b img{width: 100px;height:100px;border-radius: 5px;margin: 10px;display: inline-block;}
+                        .c img{width: 100px;height:100px;border-radius: 5px;margin: 10px;display: inline-block;}
+                        .d img{width: 100px;height:100px;border-radius: 5px;margin: 10px;display: inline-block;}
+            .supjaggerLight {}
+
+
+
+
+        .subjaggerDark {}
+        .supjaggerDark {}

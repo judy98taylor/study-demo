@@ -1,0 +1,39 @@
+body { background-image: url(../images/body-bg2.jpg); background-position: center;}
+.header-wrapper { background-color: orange; height: 44px; line-height: 44px; text-align: center; position: relative;}
+.header-wrapper h1 { display: inline-block; font-size: 20px; color: #fff; font-weight: normal;}
+.header-wrapper a { display: inline-block; font-size: 20px; color: #fff; width: 44px; height: 44px; }
+.header-wrapper i { display: inline-block; font-size: 20px; color: #fff; width: 44px; height: 44px; line-height: 44px; vertical-align: middle;}
+.back { position: absolute; top: 0; left:0; }
+.home { position: absolute; top: 0; right: 0;}
+
+.logo-wrapper { margin-bottom: 10px; padding: 10px 0; background-color: rgba(157, 255, 0, 0.54);}
+.logo { background-image: url(../images/logo.fw.png); background-position: center; height: 60px; position: relative; width: auto; background-size: 120px 60px; background-repeat: no-repeat;}
+
+.logo a { display: inline-block; color: #fff; width: 30%; height: 88px; text-align: center; }
+
+.card { position: absolute; top: 0; left:0; display: inline-block;}
+	.card img { height: 30px; }
+	.card h6 { font-size: 1px;font-weight: normal;}
+	.card p { font-size: 1px;}
+.coupon { position: absolute; top: 0; right: 0;display: inline-block;}
+	.coupon img { height: 30px; }
+	.coupon h6 { font-size: 1px;font-weight: normal;}
+	.coupon p { font-size: 1px;}
+
+.activity { padding: 10px 0; background-color: rgba(157, 255, 0, 0.54); color: #fff; font-size: 18px;}
+.activity img { height: 25px; padding: 0 10px;}
+.activity span { font-size: 1px;}
+/*图片轮播开始*/
+.Gray-focus-swipe { -webkit-box-sizing:border-box; word-wrap:break-word; word-break:keep-all; }
+    .Gfs-wrap { overflow:hidden; position:relative; }
+        .Gfs-wrap ul { -webkit-padding-start:0px; }
+            .Gfs-wrap ul li { height:180px; }
+            .Gfs-wrap ul li .cus { width:100%; }
+        .Gfs-wrap ol { height:20px; position:relative; z-index:10; margin-top:-20px; text-align:right; padding-right:15px;
+        /* [disabled]background-color: rgba(0,0,0,0.3); */
+        }
+        .Gfs-wrap ol li { display:inline-block; margin:5px 2px; width:8px; height:8px; background-color:#757575; border-radius:8px; }
+        .Gfs-wrap ol li.on{ background-color:#ffffff; }
+/*图片轮播结束*/
+
+

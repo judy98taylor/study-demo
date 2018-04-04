@@ -1,0 +1,10 @@
+.bkgd {background-color: #00ffff;text-align: center;}
+    .circle {/*background-color: #ff8c00;*/
+        background:inherit;
+        border-radius: 50%;height: 400px;width: 400px;display: inline-block;margin-top: 50px;}
+        .pic {height: 300px;width: 300px;border-radius: 50%;margin: 50px;display: inline-block;}
+    .square {/*background-color: #ff8c00;*/
+        background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));
+        margin: -200px auto 100px;height: 250px;}
+
+

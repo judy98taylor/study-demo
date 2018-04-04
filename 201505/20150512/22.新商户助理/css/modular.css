@@ -1,0 +1,8 @@
+.Gray-album-admin {}
+    .Gray-album-admin li { float:left; border-radius:6px; position:relative; }
+        .Gray-album-admin li:last-child .gsmb-pic { border-radius:6px; }
+        .Gray-album-admin li .gsmbp-del { position:absolute; right:-4px; top:-4px; background:#900; width:16px; height:16px; border-radius:50%; }
+        .Gray-album-admin li .gsmbp-del i { color:#fff; display:block; width:16px; line-height:16px; font-size:10px; text-align:center; }
+        .Gray-album-admin .gsmb-pic .gsmbp-add { display:block; width:100%; height:100%; background:#ccc url(../images/add.fw.png) no-repeat center center; background-size:50%; border-radius:6px; }
+        .Gray-album-admin .gsmb-pic a { float:left; border-radius:6px; overflow:hidden; text-align:center; position:relative; }
+        .Gray-album-admin .gsmb-pic img { position:relative; vertical-align:text-top; }

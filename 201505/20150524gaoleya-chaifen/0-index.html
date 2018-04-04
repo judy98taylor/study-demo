@@ -1,0 +1,497 @@
+<head>
+    <meta charset="utf-8">
+    <!--设置语言编码为uft-8-->
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <!--按1:1比例执行.不允许扩大与缩小.-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+    <meta content="email=no" name="format-detection" />
+    <!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+    <title>首页</title>
+    <!--设置页面标题-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all">
+    <!--调用通用样式表文件 common.css-->
+    <!--<link rel="stylesheet" type="text/css" href="css/modular.css"--> media="all">
+    <!--调用模块样式表文件 modular.css-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" media="all">
+    <!--调用字体图标样式文件(压缩版) -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--引用jQuery文件-->
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <!--引用swipe文件-->
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--引用通用js文件-->
+</head>
+
+<body>
+	<style>body { background-color: brown;}</style>
+	
+<!--两边按钮中间文字-->
+    <div class="Gray-header">
+        <div class="Gh-top">
+            <div class="Ght-wrap">
+                <a class="btn back" href="javascript:;"><i class="fa fa-chevron-left i-cf"></i></a> 
+                <a class="btn more" href="javascript:;"><i class="fa fa-home i-cf"></i></a>
+                <div class="Ght-wrap-title">Gloria Jean's Coffees</div>
+            </div>
+        </div>
+    </div>
+	
+<style>
+		.Gray-header { height:44px; }
+    .Gh-top {
+        background-image:-moz-linear-gradient(top, #FF652B, #F74400); /* Firefox */
+        background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #FF652B), color-stop(1, #F74400)); /* Saf4+, Chrome */
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF652B', endColorstr='#F74400', GradientType='0'); /* IE*/
+        box-shadow:0px 1px 6px #000;
+        height:44px; left:0;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:999;
+    }
+    .Ght-wrap { margin:0 10px; }
+        .Ght-wrap .btn { width:30px; height:30px; margin-top:7px; font-size:24px; line-height:30px; text-align:center; display:block; color:#000; }
+        .Ght-wrap .btn i { color:#FFF; line-height:30px; }
+        .Ght-wrap .back { float:left; }
+        .Ght-wrap .more { float:right; }
+    .Ght-wrap-title {
+        color:#fff;
+        font-size:18px;
+        height:44px;
+        overflow:hidden;
+        line-height:44px;
+        text-align:center;
+        text-shadow:1px 1px 1px rgba(0,0,0,.2);
+    }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+	<style>.kong {height: 20px;}</style>
+<!--分割线-->	
+			<!--左右图 中间图标可点击-->
+	        <div class="gi-menu">
+            <a class="gim-btn-left">
+                <img class="gimb-ico" src="images/ico-1.fw.png" />
+                <div class="gimb-info">
+                    <h4>乐活卡</h4>
+                    <p>LOHAS CARD</p>
+                </div>
+            </a>
+            <div class="gim-logo">
+                <a href="javascript:;">
+                    <img src="images/logo-2.fw.png" />
+                </a>
+            </div>
+            <a class="gim-btn-right">
+                <img class="gimb-ico" src="images/ico-2.fw.png" />
+                <div class="gimb-info">
+                    <h4>乐活优惠</h4>
+                    <p>LOHAS COUPON</p>
+                </div>
+            </a>
+        </div>
+	
+<style>
+		.gi-menu { height:60px; padding:10px; margin-top:10px; background:rgba(0, 0, 0, 0.55); }
+    .gi-menu a { color:#fff; }
+    .gim-logo { width:50%; height:60px; float:left; text-align:center; }
+        .gim-logo img { height:60px; }
+    .gim-btn-left, .gim-btn-right  { width:25%; height:60px; display:block; float:left; text-align:center; }
+        .gimb-ico { width:32px; height:32px; }
+        .gimb-info { margin-top:4px; }
+            .gimb-info h4 { font-size:14px; text-decoration:none; }
+            .gimb-info p { text-align:center; font-size:7px; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->	
+			<!--图文标题-->
+	<h3 class="gif-tit clearfix"><a href="">乐活日活动</a><em>LOHAS ACTIVITY</em></h3>
+	
+<style>
+		.gif-tit {
+        height:40px;
+        overflow:hidden;
+        padding-left:36px;
+        background:url(../images/ico-3.fw.png) no-repeat 4px center;
+        background-size:28px 26px;background-color: blue;
+    }
+    .gif-tit a { font-size:18px; color:#fff; font-weight:normal; float:left; line-height:40px; }
+    .gif-tit em { float:left; font-size:12px; margin:15px 0 0 5px; color:#fff; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->	
+	  			<!--2张图片轮播-->
+	            <div class="Gray-focus-swipe">
+                <div id="Grayfs-id" class="Gfs-wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/images-1.jpg" class="cus" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/images-1.jpg" class="cus" />
+                            </a>
+                        </li>
+                    </ul>
+                    <ol>
+                        <li class="on"></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    new Swipe(document.getElementById('Grayfs-id'), {
+                        speed: 500,
+                        auto: 3000,
+                        callback: function () {
+                            var lis = $(this.element).next("ol").children();
+                            lis.removeClass("on").eq(this.index).addClass("on");
+                        }
+                    });
+                });
+            </script>
+	
+<style>
+		.Gray-focus-swipe { -webkit-box-sizing:border-box; word-wrap:break-word; word-break:keep-all; }
+    .Gfs-wrap { overflow:hidden; position:relative; }
+        .Gfs-wrap ul { -webkit-padding-start:0px; }
+            .Gfs-wrap ul li { height:180px; }
+            .Gfs-wrap ul li .cus { width:100%; }
+        .Gfs-wrap ol { height:20px; position:relative; z-index:10; margin-top:-20px; text-align:right; padding-right:15px;
+        /* [disabled]background-color: rgba(0,0,0,0.3); */
+        }
+        .Gfs-wrap ol li { display:inline-block; margin:5px 2px; width:8px; height:8px; background-color:#757575; border-radius:8px; }
+        .Gfs-wrap ol li.on{ background-color:#ffffff; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--2按钮平分一行-->
+	 <div class="gmc-more">
+            <span href=""><a href="javascript:;">查看更多</a></span>
+            <span href=""><a href="javascript:;">查看更多</a></span>
+        </div>
+<style>
+	.gmc-more { margin:14px auto 0; width:292px; border-radius:5px; background:#ffb034; box-shadow:0 4px 0 #ed8e00; color:#fff; height:36px; }
+    .gmc-more span { display:block; width:50%; height:36px; line-height:36px; float:left; text-align:center; }
+    .gmc-more span a { color:#fff; font-size:14px; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->	
+			<!--2按钮平分一行且水平居中-->
+	<div class="gi-umenu clearfix">
+            <div class="giu-btn giu-btn-game">
+                <a href="javascript:;" class="giub-ico"></a>
+                <div class="giub-info">
+                    <h4><a href="javascript:;">乐活游戏</a></h4>
+                    <p>LOHAS GAME</p>
+                </div>
+            </div>
+            <div class="giu-btn giu-btn-story">
+                <a href="javascript:;" class="giub-ico"></a>
+                <div class="giub-info">
+                    <h4><a href="javascript:;">品牌故事</a></h4>
+                    <p>BRAND STORY</p>
+                </div>
+            </div>
+        </div>
+	
+<style>
+	.gi-umenu { margin-top:10px; background:rgba(0, 0, 0, 0.55); padding:10px; }
+    .giu-btn { width:50%; float:left; color:#fff; }
+        .giub-ico { width:32px; height:32px; display:block; float:left; overflow:hidden; margin-top:2px; }
+        .giub-info { position:relative; margin-left:42px; }
+        .giub-info h4 a { font-size:9px; color:#fff; font-size:20px; font-weight:normal; }
+        .giub-info p { font-size:9px; }
+    .giu-btn-game .giub-ico { background:url(../images/ico-4.fw.png) no-repeat center center; background-size:32px 32px; }
+    .giu-btn-story .giub-ico { background:url(../images/ico-5.fw.png) no-repeat center center; background-size:32px 32px; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--上下文字标题-->
+	<div class="gd-menu clearfix">
+            <span><a href="javascript:;">最新优惠</a></span>
+            <span><a href="javascript:;" class="current">我的优惠券<em>10</em></a></span>
+        </div>
+	
+<style>
+	.gd-menu { padding:10px; background:rgba(0, 0, 0, 0.55); }
+.gd-menu span { width:50%;  float:left; text-align:center; }
+.gd-menu span a { position:relative; padding-left:25px; color:#fff; font-size:18px; background:url(../images/ico-2.fw.png)no-repeat left center; background-size:20px auto; }
+.gd-menu span a em { position:absolute; right:-10px; top:-5px; width:10px; height:10px; line-height:10px; border-radius:10px; padding:2px 5px; background:#8C0000; color:#fff; font-size:9px; }
+.gd-menu span a.current { color:#FF652B; }
+</style>		
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--上下文字标题-->	
+			<div class="gbb-title">
+                    <h3>品牌故事</h3>
+                    <p>Brand story</p>
+            </div>
+<style>
+	.gbb-title { padding-left:44px; background:url(../images/ico-3.fw.png) no-repeat left center; background-size:auto 35px; color:#fff; background-color: blue;}
+        .gbb-title h3 { font-size:18px; }
+        .gbb-title p { font-size:9px;  }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--剧中了？-->
+	<div class="gp-title">
+            <div class="gpt-info">
+                <h3>产品速递</h3>
+                <p>Product Express</p>
+            </div>
+        </div>
+<style>
+	.gp-title { background:rgba(0, 0, 0, 0.55); padding:8px; color:#fff; }
+    .gpt-info { padding-left:44px; background:url(../images/ico-3.fw.png) no-repeat left center; background-size:auto 35px; }
+        .gpt-info h3 { font-size:18px; }
+        .gpt-info p { font-size:9px;  }
+</style>
+<!--分割线-->
+	<div class="kong"></div>		
+<!--分割线-->
+			<!--公司介绍-->
+	            <div class="gbb-body">
+                <div class="gbbb-logo">
+                    <img src="images/logo.fw.png" />
+                </div>
+                <h4>高乐雅咖啡 / Gloria Jean’s Coffees</h4>
+                <p>高乐雅咖啡（Gloria Jean’s Coffees）是澳大利亚最大的一家连锁咖啡品牌，1979年成立，为全球最大的咖啡连锁店，其总部坐落于澳大利亚悉尼。除咖啡外，高乐雅咖啡亦有茶、各式手工制作的冷、热咖啡饮品、传统的意式浓缩咖啡、甜美醇厚的糕点。。高乐雅咖啡（Gloria Jean’s Coffees）在全球范围内分布在六大洲（非洲，亚洲，欧洲，北美洲，大洋洲和南美洲）的42个国家，已经有近10,00多店面。</p>
+            </div>
+<style>
+	.gbb-body { padding-top:10px; background-color: blue;}
+    .gbb-body p { color:#fff; font-size:12px; line-height:16px; margin-bottom:10px; }
+    .gbb-body h4 {  color:#D09A73; font-size:18px; font-weight:normal; margin-bottom:10px; }
+        .gbbb-logo { width:100%; text-align:center; margin-bottom:15px; }
+        .gbbb-logo img { width:65%; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--产品介绍-->
+	<div class="gloria-content">
+        <div class="gc-title">
+            <h3 class="gct-tit"><a href="javascript:;">白巧克力摩卡&蓝莓芝士</a></h3>
+            <div class="gct-info">
+                <span><lable>发布时间：</lable>2014-08-24</span><span><lable>发布者：</lable>2014-08-24</span>
+            </div>
+        </div>
+        <div class="gc-body">
+            <img src="images/images-3.fw.png" />
+            <p>高乐雅咖啡（Gloria Jean’s Coffees）是澳大利亚最大的一家连锁咖啡品牌，1979年成立，为全球最大的咖啡连锁店，其总部坐落于澳大利亚悉尼。除咖啡外，高乐雅咖啡亦有茶、各式手工制作的冷、热咖啡饮品、传统的意式浓缩咖啡、甜美醇厚的糕点。。高乐雅咖啡（Gloria Jean’s Coffees）在全球范围内分布在六大洲（非洲，亚洲，欧洲，北美洲，大洋洲和南美洲）的42个国家，已经有近10,00多店面。</p>
+            <p>高乐雅咖啡（Gloria Jean’s Coffees）</p>
+        </div>
+    </div>
+<style>
+	.gloria-content { padding:10px; background-color: blue;}
+    .gc-title { color:#fff; margin-bottom:10px; }
+        .gct-tit a { color:#fff; }
+        .gct-info { font-size:9px; }
+        .gct-info span { margin-right:14px; }
+    .gc-body {}
+        .gc-body img { box-shadow:0 1px 5px rgba(0, 0, 0, 0.55); width:100%; border-radius:10px; margin-bottom:10px; }
+        .gc-body p { font-size:12px; color:#fff; margin-bottom:10px; text-indent:26px; line-height:15px; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--图片式列表-->
+	        <div class="gp-list">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img class="gpl-img" src="images/images-2.fw.png" />
+                        <div class="gpl-info">
+                            <h5>白巧克力摩卡&蓝莓芝士</h5>
+                            <p>高乐雅咖啡旗下零售产品包括30多款全球顶级的咖啡豆、各式手工制作的冷、热咖啡饮品、传统的意式浓缩咖...</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img class="gpl-img" src="images/images-3.fw.png" />
+                        <div class="gpl-info">
+                            <h5>白巧克力摩卡&蓝莓芝士</h5>
+                            <p>高乐雅咖啡旗下零售产品包括30多款全球顶级的咖啡豆、各式手工制作的冷、热咖啡饮品、传统的意式浓缩咖...</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+<style>
+	.gp-list { padding:10px; background-color: blue;}
+.gp-list ul li { border-radius:10px; overflow:hidden; position:relative; box-shadow:0 1px 5px rgba(0, 0, 0, 0.55); margin-bottom:10px; }
+    .gpl-img { width:100%; border-radius:10px; }
+    .gpl-info { background:rgba(0, 0, 0, 0.55); position:absolute; left:0; bottom:0; padding:6px; border-radius:0 0 10 10px; }
+    .gpl-info h5 { color:#fff; font-size:16px; }
+    .gpl-info p { font-size:9px; color:#fff; }
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!--优惠券-->
+	        <div class="gd-box clearfix">
+            <ul class="clearfix">
+                <li onclick="alert(1111)">
+                    <div class="gdb-info gdbi-green">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-info" href="javascript:;">立即使用立<br>用立即使用</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">折扣卷</a></div>
+                    <div class="gdb-num">24<em>张</em></div>
+                </li>
+                <li>
+                    <div class="gdb-info gdbi-green">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-btn" href="javascript:;">立即使用</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">折扣卷</a></div>
+                </li>
+                <li>
+                    <div class="gdb-info gdbi-red">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-btn" href="javascript:;">立即领取</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">抵现卷</a></div>
+                </li>
+                <li>
+                    <div class="gdb-info gdbi-red">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-btn" href="javascript:;">立即领取</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">抵现卷</a></div>
+                </li>
+                <li>
+                    <div class="gdb-info gdbi-gray">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-btn" href="javascript:;">已领取</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">礼品卷</a></div>
+                </li>
+                <li>
+                    <div class="gdb-info gdbi-gray">
+                        <div class="gdbi-border">
+                        </div>
+                        <div class="gdbi-content">
+                            <div class="gdbic-time">
+                                <h4>有效期</h4>
+                                <time>5月12日~5月19日</time>
+                            </div>
+                            <div class="gdbic-price">
+                                <span>50</span><em>元</em>
+                            </div>
+                            <a class="gdbic-btn" href="javascript:;">已领取</a>
+                        </div>
+                    </div>
+                    <div class="gdb-angle"><a href="javascript:;">礼品卷</a></div>
+                </li>
+            </ul>
+        </div>
+<style>
+	.gd-box { padding:10px; background-color: blue;}
+.gd-box ul { }
+    .gd-box ul li { width:100%; height:90px; border-radius:10px; overflow:hidden; display:block; float:left; position:relative; box-shadow:0 1px 3px #27170D; margin-bottom:10px; background:url(../images/images-2.jpg) no-repeat center center; background-size:100% auto; }
+        .gdb-info { position:absolute; right:0; top:0; height:100%; width:90px; }
+            .gdbi-border { width:5px; height:100%; position:relative; float:left; overflow:hidden; background:url(../images/gdbi-border.fw.png) repeat-y; background-size:9px 6px; }
+            .gdbi-content { background:#3C5137; position:relative; height:100%; margin-left:3px; padding:5px; color:#fff; }
+                .gdbic-time h4 { font-size:14px; color:#fff; }
+                .gdbic-time time { font-size:9px; }
+                .gdbic-price { width:100%; text-align:center; }
+                .gdbic-price span { font-size:24px; }
+                .gdbic-price em { font-size:12px; margin-left:2px; }
+                .gdbic-btn { display:block; width:100%; text-align:center; color:#fff; }
+                .gdbic-info { display:block; width:100%; text-align:center; color:#fff; font-size:9px; }
+        .gdbi-red .gdbi-border { background-position:-3px 0; background-size:9px 6px; }
+        .gdbi-red .gdbi-content { background:#8C0000; }
+        .gdbi-gray .gdbi-border { background-position:-6px 0; background-size:9px 6px; }
+        .gdbi-gray .gdbi-content { background:#999; }
+        .gdb-angle { width:0; height:0; border-top:50px solid #8C0000; border-right:50px solid transparent; position:absolute; left:0; top:0; z-index:1; }
+        .gdb-angle a { position:absolute; left:1px; top:-39px; -webkit-transform:rotate(315deg); width:36px; color:#fff; font-size:12px; }
+        .gdb-num { position:absolute; left:10px; bottom:10px; background:#8C0000; border-radius:4px; color:#fff; font-size:14px; padding:2px 5px; }
+
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!---->
+	
+	
+	
+	
+<style>
+	
+</style>
+<!--分割线-->
+	<div class="kong"></div>
+<!--分割线-->
+			<!---->
+	
+	
+</body>
+
+</html>

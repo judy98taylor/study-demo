@@ -1,0 +1,13 @@
+body{margin: 0;padding: 0;}
+div {margin: 4px;padding: 0;border: solid 2px red;}
+/*.wrapper {display:-webkit-box;display:-moz-box;
+    -webkit-box-orient: vertical;-moz-box-orient: vertical;}
+    .head {}*/
+    .main {display:-webkit-box;display:-moz-box;
+        -webkit-box-orient: horizontal;-moz-box-orient: horizontal;}
+        .left,.middle,.right {box-sizing: border-box;padding: 10px;}
+        .left {width: 300px;-webkit-box-ordinal-group:1;}
+            .left img {border: solid 2px green;border-radius: 30%;width: 50%;}
+        .middle {-webkit-box-flex:1;-moz-box-flex:1;-webkit-box-ordinal-group:2; }
+        .right {-webkit-box-flex:2;-moz-box-flex:2;-webkit-box-ordinal-group:3;}
+    /*.foot {}*/

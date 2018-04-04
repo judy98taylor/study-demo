@@ -1,0 +1,71 @@
+/*首页*/
+body { background-color: #ffe16c;}
+/*.head { background-image: url(../images/light.png); background-position: top; background-repeat: no-repeat; background-size: 100% 100% ; height: 200px; width: 100%; position: relative;}
+    .food { width: 60%; display: inline-block; float: left; position: relative;}
+        .food img { width: 80%;}
+        .title { width: 50%; display: inline-block; text-align: right;position: absolute;bottom:0; right: 10%;}
+    .share { width: 40%; display: inline-block;}
+        .share img { width: 80%;}
+    .head p { display: inline-block; text-align: center;}*/
+header { }
+    .g-wrapper { background-image: url(../images/light.png); background-position: top; background-repeat: no-repeat; background-size: 100% 100% ; height: 250px; width: 100%;}
+        .m-food { display: inline-block;position: relative;top:10px;left: 5px;height: 142px;width: 202px;}
+            .m-food img { height :100%;width :100%;}
+            .m-title { display: inline-block;position: absolute;bottom: 34px;left: 50px;height: 70px;width: 180px;}
+                .m-title img { height :100%;width :100%;}
+        .m-share { display: inline-block;position: absolute;top:20px;right: 15px; height :90px;width :90px;}
+            .m-share img { height :100%;width :100%;}
+        .m-text { text-align: center;color:#9b1e24;font-size: 22px;font-weight: bold;}
+        .m-text span { }
+        .m-text em { color:#e70012; font-size: 44px;}
+section { margin: -50px 20px 0;}
+    .m-bar1 { background-image: url(../images/bar1.png); background-repeat: no-repeat; background-size:100% 100%; height: 50px; position: relative;}
+        .m-bar1 p { color: #fff; font-size: 22px;display: inline-block;position: absolute;bottom: 5px;left: 40px;}
+    .m-explanation { background-color: #f39801; padding: 10px 10px 0;}
+        .m-explanation p{ color: #fff; text-indent: 1em;
+            font-size: 12px; line-height:16px;} 
+        /*.explanation ol { list-style-type: decimal; padding: 10px;} 
+        .explanation li { list-style-type: decimal;color: #fff; text-indent: 1em;} */
+    .m-bar2 { background-image: url(../images/bar2.png); background-repeat: no-repeat; background-size: 100% 100%;height: 130px; position: relative;}
+	.m-bar2 p { color: #fff; font-size: 22px;display: inline-block;position: absolute;bottom: 5px;left: 40px;}
+    .m-prize-list { background-color: #f39801;}
+		.m-prize-list ul {padding: 5px 10px;}
+		.m-prize-list li { margin: 10px 0; height: 80px;position: relative;}
+		.m-prize-list img { height: 80px; width: 80px; }
+		.m-prize-info { display: inline-block;margin-left: 10px;height: 80px;position: absolute;}
+		.m-prize-info h6 { color: #fff;font-size: 18px;font-weight: normal;}
+		.m-prize-info p { color: #fff;font-size: 12px;line-height: 16px;}
+        .m-share-btn { text-align: center;padding: 5px 0;}
+        .m-share-btn a { display: inline-block;color: #9b1e24; padding: 10px; background-color: #fceed4; border: 2px solid #9b1e24; border-radius: 15px;font-size: 16px;line-height: 16px;box-shadow: 0 2px 0 #9b1e24;}
+    .m-bar3 { background-image: url(../images/bar3.png); background-repeat: no-repeat; background-size: 100% 100%;height: 140px;position: relative;}
+		.m-bar3 p { color: #fff; font-size: 22px;display: inline-block;position: absolute;bottom: 5px;right: 40px;}
+    .m-attention { background-color: #f39801; padding: 10px 10px 0;}
+    .m-attention p{ color: #fff; text-indent: 1em;
+            font-size: 12px;line-height: 16px;} 
+    .m-bar4 { background-image: url(../images/bar4.png); background-repeat: no-repeat; background-size:100% 100%; height:26px;margin-bottom: 20px;}
+footer { background-color: #ea5513;height: 30px;}
+/*领取奖品*/
+.g-gongxi-wrapper { text-align: center;background-image: url(../images/light.png); background-position: center; background-repeat: no-repeat; background-size: 100% 100% ; height: 250px; width: 100%;}
+    .m-gongxi-food { display: inline-block;height: 160px;width: 320px; margin: 20px 0 0; position: relative;
+        background-image: url(../images/gongxi-food.png);background-repeat: no-repeat;background-size: 100% 100%;}
+        .m-gongxi-food img { height :100%;width :100%;}
+    .m-gongxi-title {display: inline-block;height: 80px;width: 170px;position: absolute;top: 20px;left: 43px;background-image: url("../images/gongxi.png");background-size: 170px 80px; background-repeat: no-repeat;}
+    .m-gongxi-user { position: absolute;top:100px;left: 130px;text-align: center;}
+        .m-gongxi-user a {display: inline-block;height: 60px;width: 60px;border-radius: 50%;}
+        .m-gongxi-user img {height: 100%;width: 100%;border-radius: 50%;}
+        .m-gongxi-user p {color: #9B1E24; font-size: 16px;line-height: 24px;}
+    .m-bar11 { text-align: center; background-image: url(../images/bar1.png); background-repeat: no-repeat; background-size:100% 100%; height: 50px; position: relative;}
+    .m-bar11  p {color: #fff; font-size: 18px;line-height: 60px; display: inline-block;}
+    .m-prize { background-color: #f39801; text-align: center;}
+        .m-prize img { height: 100px; padding: 20px;}
+        .m-prize h5 { font-weight: normal;font-size: 20px;line-height: 20px;color: #fff;}
+        .m-prize p { font-size: 10px;color: #fff;padding: 5px 0;}
+        .m-prize form { padding: 10px 0;}
+        .m-prize input:first-child { text-align: center;;font-size: 20px; line-height: 24px; background-color: #fceed4;color:gray;border: 1px solid #9b1e24;border-radius: 20px; box-shadow: 0 2px 0 #9b1e24;margin: 6px 0;padding: 2px;width: 200px;}
+        .m-prize input:last-child { text-align: center;;font-size: 20px; line-height: 24px; background-color: #fceed4;color:#9B1E24;border: 1px solid #9b1e24;border-radius: 20px; box-shadow: 0 2px 0 #9b1e24;margin: 6px 0;padding: 2px;width: 100px;}
+    .m-bar12 { background-image: url(../images/bar12.png); background-repeat: no-repeat; background-size:100% 100%; height:60px;margin-bottom: 20px;}
+        .m-submit-btn { text-align: center;padding: 5px 0;}
+            .m-submit-btn a { display: inline-block;color: #9b1e24; padding: 10px 40px; background-color: #fceed4; border: 2px solid #9b1e24; border-radius: 20px;font-size: 16px;line-height: 16px;height: 16px; box-shadow: 0 2px 0 #9b1e24;}
+/*啦啦啦*/
+
+

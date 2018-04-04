@@ -1,0 +1,310 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!--设置语言编码为uft-8-->
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--按1:1比例执行.不允许扩大与缩小.-->
+<meta content="telephone=no" name="format-detection" />
+<!--telephone=no 不允许执行手机播放 telephone=yes 允许执行手机播放-->
+<meta content="email=no" name="format-detection" />
+<!--email=no 不允许执行邮件 email=yes 允许执行邮件-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--如果内容设置为YES，Web应用程序运行在全屏模式;否则，它不会。默认行为是使用Safari浏览器显示网页内容-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--苹果自有顶部状态栏样式:当前设置为"黑色"-->
+<title>单页默认模板</title>
+<!--设置页面标题-->
+<link rel="stylesheet" type="text/css" href="css/common.css" media="all">
+<!--调用通用样式表文件 common.css-->
+<link rel="stylesheet" type="text/css" href="css/modular.css" media="all">
+<!--调用模块样式表文件 modular.css-->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" media="all">
+<!--调用字体图标样式文件(压缩版) -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--引用jQuery文件-->
+<script type="text/javascript" src="js/common.js"></script>
+<!--引用通用js文件-->
+<script type="text/javascript" src="js/jquery.VMiddleImg.js"></script>
+<!--图片裁剪js文件-->
+</head>
+<style>
+    .Gray-bg-red { background:#F15353; }
+        .Gray-merchant { text-align:center; color:#fff; padding:40px 0 20px; position:relative; }
+            .Gm-avatar { margin-bottom:10px; display:inline-block; width:80px; height:80px; padding:2px; background:#fff; border-radius:50%; box-shadow:0 4px 2px rgba(0, 0, 0, 0.15); } 
+                .Gm-avatar img { width:100%; height:100%; border-radius:50%; } 
+            .Gm-name {  }
+                .Gray-merchant h4 { font-size:24px; font-weight:normal; line-height:32px; }
+                .Gray-merchant p { font-size:14px; font-weight:normal; line-height:20px; }
+            .Gm-prompt { position:absolute; left:0; top:0; background:rgba(255, 255, 255, 0.25); height:24px; width:100%; }
+                .Gm-prompt p { text-indent:10px; text-align:left; line-height:24px; }
+                .Gm-prompt a { position:absolute; background:#fff; border-radius:50%; width:16px; height:16px; display:block; line-height:16px; right:4px; top:4px; }
+                    .Gm-prompt a i { line-height:16px; color:#F15353; font-size:12px; }
+        .Gray-function { }
+            .Gf-top { height:6px; background:url(images/sawtooth.fw.png) repeat-x center 0 ; background-size:12px 12px; }
+            .Gf-bottom { height:6px; background:url(images/sawtooth.fw.png) repeat-x center -6px; background-size:12px 12px; }
+            .Gf-content { background:#fff; padding:10px 20px; }
+                .Gfc-user { padding-bottom:14px; border-bottom:1px solid #eee; }
+                    .Gfcu-avatar { }
+                        .Gfcua-pic { display:block; float:left; padding:2px; position:relative; width:50px; height:50px; box-shadow:0 2px 2px rgba(0, 0, 0, 0.15); border-radius:50%; }
+                            .Gfcua-pic img { width:100%; height:100%; border-radius:50%; }
+                        .Gfcua-name { position:relative; margin-left:64px; line-height:54px; }
+                            .Gfcua-name h4 { font-size:18px; }
+                        .Gfcua-info { line-height:24px; font-size:14px; color:#999; margin-top:6px; }
+                        
+                .Gfc-upload { text-align:center; padding:20px 0; }
+                    .Gfc-upload a { width:80px; height:80px; display:inline-block; border:2px dashed #eee; border-radius:8px; }
+                        .Gfc-upload a i { line-height:84px; font-size:46px; color:#eee; }
+                .Gfc-album { padding:20px 0; }
+                .Gfc-requires { padding-top:14px; border-top:1px solid #eee; }
+                    .Gfc-requires h5 { font-size:16px; line-height:20px; margin-bottom:4px; }
+                    .Gfc-requires p { font-size:12px; line-height:16px; color:#999; margin-bottom:4px; }
+                .Gray-activities { padding:40px 0; }
+                    .Ga-tit { text-align:center; margin-bottom:30px; }
+                    .Ga-tit img { width:80%; }
+                    .Ga-pic {}
+                        .Gap-wrap { width:280px; margin:0 auto; position:relative; }
+                            .Gap-wrap img { width:100%; }
+                            .Gapw-no { text-align:center; position:absolute; left:50%; margin-left:-83px; bottom:32px; width:166px; height:70px; background:url(images/activities-no.fw.png) no-repeat; background-size:166px 70px; }
+                            /*.Gapw-no a { color:#58462C; line-height:40px; position:relative; display:inline-block; font-size:40px; height:40px; margin-top:15px; }
+                            .Gapw-no a em { font-size:20px; line-height:24px; float:left; position:absolute; right:-24px; bottom:4px; }*/
+                            .Gapw-no span { display:inline-block;  height:40px; line-height:40px; font-size:40px; margin-top:15px; }
+                            .Gapw-no span.Gapwn-right { line-height:40px; font-size:24px; }
+                            .Gapw-joining { background:rgba(0, 0, 0, 0.25); float:left; position:absolute; right:26px; top:80px; width:60px; height:60px; padding:3px; border-radius:50%; }
+                            .Gapw-joining a { padding:10px; color:#fff; background:#58462C; line-height:20px; width:40px; border-radius:50%; display:inline-block; float:left; text-align:center; font-size:19px; }
+                    .Ga-info { padding:10px 0; }
+                        .Ga-info p { color:#fff; font-size:12px; line-height:18px; text-align:center; }
+                        .Ga-info p em { color:#FEDE00; line-height:18px; padding:0 4px; }
+    
+        .Ga-btn { text-align:center; margin-bottom:10px; }
+            .Ga-btn a { padding:3px 3px 7px 3px; background:rgba(0, 0, 0, 0.25); border-radius:8px; display:inline-block; line-height:40px; width:60%; }
+            .Ga-btn a em { box-shadow:0 4px 0 #FEBC30; display:inline-block; line-height:40px; width:100%; background:#FEDE00; color:#58462C; font-weight:bold; font-size:20px; border-radius:6px; }
+        .Ga-explain { padding:4px 0; }    
+            .Ga-explain span { width:50%; display:block; float:left; text-align:center; }    
+            .Ga-explain span a { line-height:16px; color:#fff; font-size:14px; text-decoration:underline; }
+    .Gray-list {}
+        .Gl-top { height:6px; background:url(images/sawtooth-black.fw.png) repeat-x center 0 ; background-size:12px 12px; }
+        .Gl-bottom { height:6px; background:url(images/sawtooth-black.fw.png) repeat-x center -6px; background-size:12px 12px; }
+        .Gl-content { background:rgba(0, 0, 0, 0.25); padding:20px 0; }
+            .Glc-tit { text-align:center; margin-bottom:20px; }
+                .Glc-tit img { width:64%; }
+            .Glc-list { margin:0 20px 20px; padding-bottom:1px; border-top:1px dashed rgba(255, 255, 255, 0.25); }
+            .Glc-list li { border-bottom:1px dashed rgba(255, 255, 255, 0.25); padding:10px 0 9px; }
+                .Glcl-avatar { position:relative; width:30px; height:30px; padding:2px; display:block; float:left; background:#fff; border-radius:4px; }
+                    .Glcl-avatar img { width:100%; }
+                .Glcl-tit { position:relative; margin-left:44px; color:#fff; line-height:34px; font-size:15px; }
+                .Glcl-tit em { color:#FEDE00; padding:0 4px; }
+                        
+</style>
+<body class="Gray-bg-red">
+    <style>
+        .Gray-float { position:fixed; z-index:999999; height:100%; width:100%; background:rgba(0, 0, 0, 0.75); left:0; top:0; }
+            .Gf-times { display:inline-block; background:#fff; border-radius:50%; position:absolute; right:10px; top:10px; height:30px; line-height:30px; width:30px; text-align:center; }
+                .Gf-times i { color:#666; line-height:30px; font-size:22px; }
+            .Gf-box { margin:20px; padding:20px; background:#fff; border-radius:8px; }
+                .Gfb-title { margin-bottom:10px; }
+                    .Gfb-title h4 { font-size:24px; line-height:30px; color:#333; font-weight:normal; text-align:center; }
+                .Gfb-body p { line-height:20px; font-size:14px; margin-bottom:10px; color:#333; }
+            .Gfbb-d { text-align:center; margin:10px 0; }
+                .Gfbb-d a { height:40px; display:inline-block; line-height:40px; width:60%; background:#F15353; border-radius:8px; box-shadow:0 4px 0 #D91111; color:#fff; font-size:20px; font-weight:bold; }
+            .Gfbb-s { text-align:center; margin:10px 0; }
+                .Gfbb-s span { width:50%; float:left; }
+                .Gfbb-s a { height:40px; display:inline-block; line-height:40px; width:90%; background:#F15353; border-radius:8px; box-shadow:0 4px 0 #D91111; color:#fff; font-size:20px; font-weight:bold; }
+                    
+    </style>
+    <!--<div class="Gray-float">
+        <a href="javascript:;" class="Gf-times"><i class="fa fa-times"></i></a>
+        <!--<div class="Gf-box">
+            <div class="Gfb-title">
+                <h4>外婆家( 大悦城店 )</h4>
+            </div>
+            <div class="Gfb-body">
+                <p>河西区浦口道22号汇河西区浦口道22号汇通大厦B座403室通大厦B座403室河西区浦口道22号汇通大厦B座403室</p>
+                <p>河西区浦口道22号河西区浦口道22号汇通大厦B座403室河西区浦口道22号汇通大厦B座403室汇通大厦B座403室河西区浦口道22号汇通大厦B座403室</p>
+            </div>
+            <div class="Gfb-btn">
+                <div class="Gfbb-d clearfix">
+                    <a href="javascript:;">按钮左</a>
+                </div>
+                <div class="Gfbb-s clearfix">
+                    <span><a href="javascript:;">按钮左</a></span>
+                    <span><a href="javascript:;">按钮右</a></span>
+                </div>
+            </div>-->
+        <style>
+            .Gray-share img { width:100%; }
+        </style>
+        <!--<div class="Gray-share">
+            <img src="images/bg.fw.png">
+        </div>-->
+    </div>-->
+    <div class="Gray-merchant">
+        <div  class="Gm-avatar">
+            <a href=""><img src="images/avatar.jpg" /></a>
+        </div>
+        <div class="Gm-name">
+            <h4>外婆家( 大悦城店 )</h4>
+        </div>
+        <div class="Gm-add">
+            <p>地址：河西区浦口道22号汇通大厦B座403室</p>
+        </div>
+        <div class="Gm-tel">
+            <p>电话：022-27551200</p>
+        </div>
+        <div class="Gm-prompt">
+            <p>你永远不知道，谁是你的“下一赞”</p>
+            <a href="javascript:;"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+    <div class="Gray-function">
+        <div class="Gf-top"></div>
+        <div class="Gf-content">
+            <div class="Gfc-user">
+                <div class="Gfcu-avatar">
+                    <a href="javascript:;" class="Gfcua-pic"><img src="images/avatar.jpg" /></a>
+                    <div class="Gfcua-name"><h4> ゛_夏天</h4></div>
+                    <p class="Gfcua-info">谁是你的“下一赞</p>
+                </div>
+                <!--<div class="Gfcua-mood">
+                    <from>
+                        <input type="text">
+                    </from>
+                </div>-->
+            </div>
+            <div class="Gfc-upload">
+                <a href="javascript:;"><i class="fa fa-plus"></i></a>
+            </div>
+            <div class="Gfc-album">
+                <ul class="Gray-album-admin clearfix">
+                    <li>
+                        <div class="gsmb-pic">
+                            <a href="javascript:;"><img src="images/avatar.jpg" class="t-img-1" /></a>
+                            <em class="gsmbp-del"><i class="fa fa-minus"></i></em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gsmb-pic">
+                            <a href="javascript:;"><img src="images/avatar.jpg" class="t-img-1" /></a>
+                            <em class="gsmbp-del"><i class="fa fa-minus"></i></em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gsmb-pic">
+                            <a href="javascript:;"><img src="images/avatar.jpg" class="t-img-1" /></a>
+                            <em class="gsmbp-del"><i class="fa fa-minus"></i></em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gsmb-pic">
+                            <a href="javascript:;"><img src="images/avatar.jpg" class="t-img-1" /></a>
+                            <em class="gsmbp-del"><i class="fa fa-minus"></i></em>
+                        </div>
+                    </li>
+                </ul>
+                <script>
+                    function loadImageSize() {
+                        $(".t-img-1").VMiddleImg();
+                        // 都计算完成了再显示出来
+                        $(".t-img-1").show();
+                    }
+                    function resizeLiStyle_main(callback) {
+                        var windowWidth = $('.Gray-album-admin').width();
+                        var liObj = $('.Gray-album-admin').find('li');
+                        var liNumCount = liObj.length;
+                        var liNum = 4;
+                        var lastLi;
+                        var liMargin = 8;
+                        var liWidth = Math.floor((windowWidth - liMargin * (liNum - 1)) / liNum);
+                        $('.Gray-album-admin').find('li').find('div').find('a').width(liWidth-0);
+                        $('.Gray-album-admin').find('li').find('div').find('a').height(liWidth-0);
+                        $('.Gray-album-admin').find('li').css('margin-right', liMargin + 'px');
+                        for (var i=0;i<liNumCount;i++) {
+                            if (i%liNum == liNum-1) {
+                                lastLi = i;
+                                $('.Gray-album-admin').find('li:eq(' + lastLi + ')').css('margin-right', '');
+                            }
+                        }
+                        callback();
+                    }
+                     $(window).load(function(){
+                         resizeLiStyle_main(loadImageSize);
+                     });
+                </script>
+            </div>
+            <div class="Gfc-requires">
+                <h5>上传须知：</h5>
+                <p>1、上传图片必须与我们相关，如店内环境、菜品或者是秀色可餐的你.</p>
+                <p>2、图片数量必须是4张</p>
+            </div>
+            <style>
+                .Gfc-btn { text-align:center; margin:10px 0; }
+                    .Gfc-btn a { height:40px; display:inline-block; line-height:40px; width:60%; background:#F15353; border-radius:8px; box-shadow:0 4px 0 #D91111; color:#fff; font-size:20px; font-weight:bold; }
+                    
+            </style>
+            <div class="Gfc-btn">
+                <a href="javascript:;">我要参加</a>
+            </div>
+        </div>
+        <div class="Gf-bottom"></div>
+    </div>
+    <div class="Gray-activities">
+        <div class="Ga-tit">
+            <img src="images/activities-tit.fw.png" />
+        </div>
+        <div class="Ga-pic clearfix">
+            <div class="Gap-wrap">
+                <img src="images/activities-pic.fw.png" />
+                <div class="Gapw-no">
+                    <span class="clearfix">365</span><span class="Gapwn-right clearfix">赞</span>
+                </div>
+                <div class="Gapw-joining">
+                    <a href="javascripr:;">我要参加</a>
+                </div>
+            </div>
+        </div>
+        <div class="Ga-info">
+            <p>只要你帮<em>゛_夏天</em>点个赞，Ta就能得到梦寐以求的</p>
+            <p><em>红烧排骨</em>×<em>1份</em>，快点伸出援手吧！</p>
+        </div>
+        <div class="Ga-btn">
+            <a href="javascript:;"><em>我要报名</em></a>
+        </div>
+        <div class="Ga-explain">
+            <span><a href="javascript:;">查看活动细则</a></span>
+            <span><a href="javascript:;">我也要参加</a></span>
+        </div>
+    </div>
+    <div class="Gray-list">
+        <div class="Gl-top"></div>
+        <div class="Gl-content">
+            <div class="Glc-tit"><img src="images/list-tit.fw.png" /></div>
+            <ul class="Glc-list">
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="Glcl-avatar"><img src="images/avatar.jpg" /></a>
+                    <div class="Glcl-tit"><em>义薄云天</em>狠狠戳了一个<em>赞</em>给你!</div>
+                </li>
+            </ul>
+        </div>
+        <div class="Gl-bottom"></div>
+    </div>
+</body>
+</html>

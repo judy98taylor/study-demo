@@ -1,0 +1,260 @@
+/* header */
+
+body { background:#4C2916 url(../images/body-bg.jpg) center center; background-size:160px 80px; }
+.Gray-header { height:44px; }
+    .Gh-top {
+        background-image:-moz-linear-gradient(top, #FF652B, #F74400); /* Firefox */
+        background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #FF652B), color-stop(1, #F74400)); /* Saf4+, Chrome */
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF652B', endColorstr='#F74400', GradientType='0'); /* IE*/
+        box-shadow:0px 1px 6px #000;
+        height:44px; left:0;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:999;
+    }
+    .Ght-wrap { margin:0 10px; }
+        .Ght-wrap .btn { width:30px; height:30px; margin-top:7px; font-size:24px; line-height:30px; text-align:center; display:block; color:#000; }
+        .Ght-wrap .btn i { color:#FFF; line-height:30px; }
+        .Ght-wrap .back { float:left; }
+        .Ght-wrap .more { float:right; }
+    .Ght-wrap-title {
+        color:#fff;
+        font-size:18px;
+        height:44px;
+        overflow:hidden;
+        line-height:44px;
+        text-align:center;
+        text-shadow:1px 1px 1px rgba(0,0,0,.2);
+    }
+.Gray-focus-swipe { -webkit-box-sizing:border-box; word-wrap:break-word; word-break:keep-all; }
+    .Gfs-wrap { overflow:hidden; position:relative; }
+        .Gfs-wrap ul { -webkit-padding-start:0px; }
+            .Gfs-wrap ul li { height:180px; }
+            .Gfs-wrap ul li .cus { width:100%; }
+        .Gfs-wrap ol { height:20px; position:relative; z-index:10; margin-top:-20px; text-align:right; padding-right:15px;
+        /* [disabled]background-color: rgba(0,0,0,0.3); */
+        }
+        .Gfs-wrap ol li { display:inline-block; margin:5px 2px; width:8px; height:8px; background-color:#757575; border-radius:8px; }
+        .Gfs-wrap ol li.on{ background-color:#ffffff; }
+
+.gi-menu { height:60px; padding:10px; margin-top:10px; background:rgba(0, 0, 0, 0.55); }
+    .gi-menu a { color:#fff; }
+    .gim-logo { width:50%; height:60px; float:left; text-align:center; }
+        .gim-logo img { height:60px; }
+    .gim-btn-left, .gim-btn-right  { width:25%; height:60px; display:block; float:left; text-align:center; }
+        .gimb-ico { width:32px; height:32px; }
+        .gimb-info { margin-top:4px; }
+            .gimb-info h4 { font-size:14px; text-decoration:none; }
+            .gimb-info p { text-align:center; font-size:7px; }
+.gi-bmenu { height:60px; padding:10px; background:rgba(0, 0, 0, 0.55); }
+    .gi-bmenu a { color:#fff; }
+    .gib-btn  { width:33%; height:60px; display:block; float:left; text-align:center; }
+        .gibb-ico { width:32px; height:32px; display:block; margin:0 auto; position:relative; }
+        .gibb-ico img { width:32px; height:32px; }
+        .gibb-ico em { position:absolute; right:-5px; top:-5px; width:10px; height:10px; line-height:10px; border-radius:10px; padding:2px 5px; background:#8C0000; color:#fff; font-size:9px; }
+        .gibb-info { margin-top:4px; }
+            .gibb-info h4 { font-size:14px; text-decoration:none; }
+            .gibb-info p { text-align:center; font-size:7px; }
+
+.gi-focus { margin-top:10px; background:rgba(0, 0, 0, 0.55); }
+    .gif-tit {
+        height:40px;
+        overflow:hidden;
+        padding-left:36px;
+        background:url(../images/ico-3.fw.png) no-repeat 4px center;
+        background-size:28px 26px;
+    }
+    .gif-tit a { font-size:18px; color:#fff; font-weight:normal; float:left; line-height:40px; }
+    .gif-tit em { float:left; font-size:12px; margin:15px 0 0 5px; color:#fff; }
+.gi-umenu { margin-top:10px; background:rgba(0, 0, 0, 0.55); padding:10px; }
+    .giu-btn { width:50%; float:left; color:#fff; }
+        .giub-ico { width:32px; height:32px; display:block; float:left; overflow:hidden; margin-top:2px; }
+        .giub-info { position:relative; margin-left:42px; }
+        .giub-info h4 a { font-size:9px; color:#fff; font-size:20px; font-weight:normal; }
+        .giub-info p { font-size:9px; }
+    .giu-btn-game .giub-ico { background:url(../images/ico-4.fw.png) no-repeat center center; background-size:32px 32px; }
+    .giu-btn-story .giub-ico { background:url(../images/ico-5.fw.png) no-repeat center center; background-size:32px 32px; }
+.gloria-card {  }
+    .gmc-card { margin-top:20px; }
+        .gmcc-set { width:300px; padding-bottom:10px; margin:0 auto; position:relative; }
+        .gmcc-box {
+            margin:0 auto;
+            position:relative;
+            width:288px;
+            height:173px;
+            box-shadow:0 1px 3px rgba(0,0,0,.5);
+            -moz-box-shadow:0 1px 3px rgba(0,0,0,.5);
+            -webkit-box-shadow:0 1px 3px rgba(0,0,0,.5);
+            border-radius:10px;
+            background:#fff url(../images/card.fw.png) no-repeat;
+            /*background:#999;*/
+            background-size:300px 180px;
+        }
+        .gmcc-box .gmccb-logo { max-height:50px; position:absolute; left:30px; top:10px; }
+        .gmcc-box .gmccb-class {
+            position:absolute;
+            top:10px;
+            right:10px;
+            font-size:18px;
+            color:#2B0600;
+            /*text-shadow:0px 1px rgb(255, 255, 255);
+            opacity:0.35;
+            filter:alpha(opacity=35);*/
+        }
+        .gmcc-box .gmccb-name {
+            position:absolute;
+            bottom:8px;
+            right:10px;
+            font-size:14px;
+            color:#2B0600;
+            /*text-shadow:0px 1px rgb(255, 255, 255);
+            opacity:0.35;
+            filter:alpha(opacity=35);*/
+        }
+        .gmcc-box .gmccb-qrcode {
+            position:absolute;
+            bottom:52px;
+            right:10px;
+            width:50px;
+            height:50px;
+            border-radius:5px;
+            border-radius:0 1px 1px rgba(0, 0, 0, 0.55);
+        }
+        .gmcc-box .gmccb-no {
+            position:absolute;
+            bottom:25px;
+            right:10px;
+            text-align:center;
+            font-size:18px;
+            font-weight:normal;
+            /*text-shadow:0px 1px rgb(255, 255, 255);
+            opacity:0.35;
+            filter:alpha(opacity=35);*/
+            color:#2B0600;
+        }
+        .gmcc-occlusion {
+            width:300px;
+            height:106px;
+            position:absolute;
+            left:0;
+            bottom:15px;
+            background:url(../images/gmcc-occlusion.fw.png) no-repeat left top;
+            background-size:300px 106px;
+        }
+
+.gmc-menu { margin:-18px auto 4px; padding:16px 5px 10px; background:#4B2C18; box-shadow:0 4px 0 #27170D; width:278px; border-radius:0 0 8px 8px; }
+    .gmc-menu span { width:33.3%; float:left; text-align:center; } 
+    .gmc-menu span a { color:#fff; font-size:14px; } 
+    .gmc-menu span em { padding:0 4px; font-size:14px; }
+/*
+.gmc-pp { margin:14px auto 0px; width:278px; }
+.gmc-pp p { text-align:center; }
+.gmc-pp p a { color:#fff; }
+*/
+
+.gmc-content { margin:-18px auto 0; width:288px; font-size:12px; color:#666; }
+    .gmcc-main { padding:16px 10px 10px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.5); -moz-box-shadow:0 1px 3px rgba(0,0,0,.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,.5);  }
+    .gmcc-bot { width:100%; height:6px; overflow:hidden; background:url(../images/gmch-img-bg.fw.png) repeat-x left top; background-size:12px 6px; }
+    .gmcc-main h5 { font-size:16px; text-align:center; margin-bottom:5px; }
+    .gmcc-main p { margin-bottom:10px; }
+    .gmccm-btn { display:block; margin-bottom:5px; height:40px; line-height:40px; color:#fff; text-align:center; font-size:16px; font-weight:600; background:#FFA244; border-radius:8px; box-shadow:0 4px 0 #FB7D00;}
+
+.gmc-more { margin:14px auto 0; width:292px; border-radius:5px; background:#ffb034; box-shadow:0 4px 0 #ed8e00; color:#fff; height:36px; }
+    .gmc-more span { display:block; width:50%; height:36px; line-height:36px; float:left; text-align:center; }
+    .gmc-more span a { color:#fff; font-size:14px; }
+
+.gmc-consumption {
+    margin:14px auto 0;
+    width:292px;
+    background:url(../images/gmc-consumption-bg.fw.png) no-repeat left 13px;
+    background-size:100%;
+    position:relative;
+    z-index:-1;
+}
+    .gmc-consumption li { background:url(../images/111.fw.png); background-size:292px 59px; width:267px; height:43px; margin-top:-3px; padding:11px 10px 5px 15px; position:relative; z-index:-9; }
+    .gmc-consumption li:first-of-type { background:url(../images/222.fw.png); background-size:292px 59px; -webkit-transform: perspective(500px) rotateX(54deg) scale(0.96); margin:-14px 0 -14px; height:43px; }
+    .gmc-consumption li:last-of-type { background:url(../images/333.fw.png); background-size:292px 59px; }
+    .gmc-consumption li .gmcc-title h4 { float:left; font-size:14px; color:#4B2C18; }
+    .gmc-consumption li .gmcc-title span { float:right; color:#f90; }
+    .gmc-consumption li .gmcc-title span em { font-size:9px; }
+    .gmc-consumption li .gmcc-info { font-size:12px; margin-left:2px; color:#999; }
+    .gmc-consumption li .gmcc-info span { float:left; }
+    .gmc-consumption li .gmcc-info time { float:right; }
+    .gmc-consumption li .gmcc-info label { float:left; color:#666; }
+
+.gloria-hack { height:100%; width:100%; background:rgba(0, 0, 0, 0.55); position:absolute; left:0; top:0; z-index:-1; }
+    .gb-box { padding:10px; }
+    .gbb-title { padding-left:44px; background:url(../images/ico-3.fw.png) no-repeat left center; background-size:auto 35px; color:#fff; }
+        .gbb-title h3 { font-size:18px; }
+        .gbb-title p { font-size:9px;  }
+    .gbb-body { padding-top:10px; }
+    .gbb-body p { color:#fff; font-size:12px; line-height:16px; margin-bottom:10px; }
+    .gbb-body h4 {  color:#D09A73; font-size:18px; font-weight:normal; margin-bottom:10px; }
+        .gbbb-logo { width:100%; text-align:center; margin-bottom:15px; }
+        .gbbb-logo img { width:65%; }
+
+.gloria-content { padding:10px; }
+    .gc-title { color:#fff; margin-bottom:10px; }
+        .gct-tit a { color:#fff; }
+        .gct-info { font-size:9px; }
+        .gct-info span { margin-right:14px; }
+    .gc-body {}
+        .gc-body img { box-shadow:0 1px 5px rgba(0, 0, 0, 0.55); width:100%; border-radius:10px; margin-bottom:10px; }
+        .gc-body p { font-size:12px; color:#fff; margin-bottom:10px; text-indent:26px; line-height:15px; }
+
+.gd-menu { padding:10px; background:rgba(0, 0, 0, 0.55); }
+.gd-menu span { width:50%;  float:left; text-align:center; }
+.gd-menu span a { position:relative; padding-left:25px; color:#fff; font-size:18px; background:url(../images/ico-2.fw.png)no-repeat left center; background-size:20px auto; }
+.gd-menu span a em { position:absolute; right:-10px; top:-5px; width:10px; height:10px; line-height:10px; border-radius:10px; padding:2px 5px; background:#8C0000; color:#fff; font-size:9px; }
+.gd-menu span a.current { color:#FF652B; }
+
+
+.gd-box { padding:10px; }
+.gd-box ul { }
+    .gd-box ul li { width:100%; height:90px; border-radius:10px; overflow:hidden; display:block; float:left; position:relative; box-shadow:0 1px 3px #27170D; margin-bottom:10px; background:url(../images/images-2.jpg) no-repeat center center; background-size:100% auto; }
+        .gdb-info { position:absolute; right:0; top:0; height:100%; width:90px; }
+            .gdbi-border { width:5px; height:100%; position:relative; float:left; overflow:hidden; background:url(../images/gdbi-border.fw.png) repeat-y; background-size:9px 6px; }
+            .gdbi-content { background:#3C5137; position:relative; height:100%; margin-left:3px; padding:5px; color:#fff; }
+                .gdbic-time h4 { font-size:14px; color:#fff; }
+                .gdbic-time time { font-size:9px; }
+                .gdbic-price { width:100%; text-align:center; }
+                .gdbic-price span { font-size:24px; }
+                .gdbic-price em { font-size:12px; margin-left:2px; }
+                .gdbic-btn { display:block; width:100%; text-align:center; color:#fff; }
+                .gdbic-info { display:block; width:100%; text-align:center; color:#fff; font-size:9px; }
+        .gdbi-red .gdbi-border { background-position:-3px 0; background-size:9px 6px; }
+        .gdbi-red .gdbi-content { background:#8C0000; }
+        .gdbi-gray .gdbi-border { background-position:-6px 0; background-size:9px 6px; }
+        .gdbi-gray .gdbi-content { background:#999; }
+        .gdb-angle { width:0; height:0; border-top:50px solid #8C0000; border-right:50px solid transparent; position:absolute; left:0; top:0; z-index:1; }
+        .gdb-angle a { position:absolute; left:1px; top:-39px; -webkit-transform:rotate(315deg); width:36px; color:#fff; font-size:12px; }
+        .gdb-num { position:absolute; left:10px; bottom:10px; background:#8C0000; border-radius:4px; color:#fff; font-size:14px; padding:2px 5px; }
+
+.gg-menu { background:rgba(0, 0, 0, 0.55); }
+    .gg-menu ul { width:300px; margin:0 auto; }
+        .gg-menu ul li { float:left; width:20%; }
+        .gg-menu ul li a { display:block; padding:10px 6px; }
+            .gg-menu ul li img { width:100%; margin-bottom:6px; }
+            .gg-menu ul li h5 { color:#fff; text-align:center; font-size:12px; font-weight:normal; line-height:14px; height:14px; }
+            .gg-menu ul li p { color:#fff; text-align:center; font-size:9px; line-height:12px; height:12px; }
+            .gg-menu ul li.current h5, .gg-menu ul li.current p { color:#f90; }
+.gg-list { padding-top:6px; }
+.ggl-box { background:url(../images/ggl-box-bg.fw.png) repeat-x left bottom; background-size:1px 50px; }
+.ggl-box ul { width:300px; margin:0 auto; padding-bottom:16px; }
+.ggl-box ul li { float:left; width:25%; position:relative; }
+.ggl-box ul li a { display:block; padding:6px; }
+.ggl-box ul li .ggl-img { width:100%; }
+.ggl-box ul li .ggl-info { width:100%; text-align:center; position:absolute; bottom:0; left:0; }
+.ggl-box ul li .ggl-info h5 { font-size:9px; color:#fff; margin:auto; background:rgba(0, 0, 0, 0.55); margin:2px; border-radius:4px; padding:2px; }
+
+.gp-title { background:rgba(0, 0, 0, 0.55); padding:8px; color:#fff; }
+    .gpt-info { padding-left:44px; background:url(../images/ico-3.fw.png) no-repeat left center; background-size:auto 35px; }
+        .gpt-info h3 { font-size:18px; }
+        .gpt-info p { font-size:9px;  }
+.gp-list { padding:10px; }
+.gp-list ul li { border-radius:10px; overflow:hidden; position:relative; box-shadow:0 1px 5px rgba(0, 0, 0, 0.55); margin-bottom:10px; }
+    .gpl-img { width:100%; border-radius:10px; }
+    .gpl-info { background:rgba(0, 0, 0, 0.55); position:absolute; left:0; bottom:0; padding:6px; border-radius:0 0 10 10px; }
+    .gpl-info h5 { color:#fff; font-size:16px; }
+    .gpl-info p { font-size:9px; color:#fff; }
